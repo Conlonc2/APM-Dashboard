@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { PiBurndownComponent } from './tiles/pi-burndown/pi-burndown.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +15,6 @@ import { PiBurndownComponent } from './tiles/pi-burndown/pi-burndown.component';
     NavMenuComponent,
     HomeComponent,
     SidebarComponent,
-    PiBurndownComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -24,7 +22,6 @@ import { PiBurndownComponent } from './tiles/pi-burndown/pi-burndown.component';
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'pi-burndown', component: PiBurndownComponent},
     ])
   ],
   providers: [],
