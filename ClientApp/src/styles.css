@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Provide sufficient contrast against white background */
+*{
+  box-sizing: border-box;
+}
+html{
+  height: 100%;
+}
+
+a {
+  color: #44a4cd;
+}
+a:hover{
+  color:44a8cf;
+}
+.shadow {
+  box-shadow:0 8px rgba(0,0,0,0.2) 0 5px 6px rgba(0, 0, 0, 0.3)
+}
+
+.section-container{
+  padding: 30px;
+}
+
+code {
+  color: #e01a76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}

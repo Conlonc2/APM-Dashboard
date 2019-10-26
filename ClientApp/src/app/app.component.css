@@ -1,0 +1,10 @@
+#sideBar{
+    height: 100vh;
+    padding-top: 80px;
+    position: fixed;
+    background-color: bisque;
+}
+
+#dashboard{
+    margin-top: 80px;
+}
