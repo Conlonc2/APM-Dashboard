@@ -14,6 +14,8 @@ import { BarChartComponent } from './charts/bar-chart/bar-chart.component';
 import { LineChartComponent } from './charts/line-chart/line-chart.component';
 import { PieChartComponent } from './charts/pie-chart/pie-chart.component';
 
+import { PiBurndownComponent } from './pi-burndown/pi-burndown.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +25,7 @@ import { PieChartComponent } from './charts/pie-chart/pie-chart.component';
     BarChartComponent,
     LineChartComponent,
     PieChartComponent,
+    PiBurndownComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -31,6 +34,7 @@ import { PieChartComponent } from './charts/pie-chart/pie-chart.component';
     ChartsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: 'pi-burndown', component: PiBurndownComponent}
     ])
   ],
   providers: [],
