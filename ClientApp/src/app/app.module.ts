@@ -9,7 +9,6 @@ import {ChartsModule} from 'ng2-charts';
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
 import { StoryStatusComponent } from './charts/story-status/story-status.component';
 import { PiBurndownComponent } from './charts/pi-burndown/pi-burndown.component';
 import { VelocityComponent } from './charts/velocity/velocity.component';
@@ -25,7 +24,6 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    SidebarComponent,
     StoryStatusComponent,
     PiBurndownComponent,
     VelocityComponent,
