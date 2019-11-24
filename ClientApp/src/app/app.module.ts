@@ -13,8 +13,14 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { BarChartComponent } from './charts/bar-chart/bar-chart.component';
 import { LineChartComponent } from './charts/line-chart/line-chart.component';
 import { PieChartComponent } from './charts/pie-chart/pie-chart.component';
+import { StoryStatusComponent } from './charts/story-status/story-status.component';
+import { PiBurndownComponent } from './charts/pi-burndown/pi-burndown.component';
+import { VelocityComponent } from './charts/velocity/velocity.component';
+import { PostSprintDefectsComponent } from './charts/post-sprint-defects/post-sprint-defects.component';
+import { TestCaseCreationComponent } from './charts/test-case-creation/test-case-creation.component';
+import { TeamAttribsComponent } from './charts/team-attribs/team-attribs.component';
+import { CurrentPostSprintDefectsComponent } from './current-post-sprint-defects/current-post-sprint-defects.component';
 
-import { PiBurndownComponent } from './pi-burndown/pi-burndown.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +31,13 @@ import { PiBurndownComponent } from './pi-burndown/pi-burndown.component';
     BarChartComponent,
     LineChartComponent,
     PieChartComponent,
-    PiBurndownComponent
+    StoryStatusComponent,
+    PiBurndownComponent,
+    VelocityComponent,
+    PostSprintDefectsComponent,
+    TestCaseCreationComponent,
+    TeamAttribsComponent,
+    CurrentPostSprintDefectsComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -34,7 +46,6 @@ import { PiBurndownComponent } from './pi-burndown/pi-burndown.component';
     ChartsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'pi-burndown', component: PiBurndownComponent}
     ])
   ],
   providers: [],
