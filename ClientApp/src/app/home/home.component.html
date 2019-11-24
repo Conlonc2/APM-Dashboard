@@ -2,8 +2,8 @@
     Team XYZ will be a carsouel on rotatio between teams, but we will have each teams stats rotate as well 
     display 3-8 charts at a time and have a timer rotate them NOTE: team rotation vs tile rotation must be properly timed to offset 
 -->
-<h1 class="text-center">Team 2
-</h1>
+<h1 class="text-center">Team 1</h1>
+<p class="text-center">Current Project: Big Business</p>
 <div class="section-container">
     <ngb-carousel #carousel interval="10000" [showNavigationArrows]="false">
         <ng-template ngbSlide>
@@ -30,7 +30,14 @@
                             <app-pi-burndown></app-pi-burndown>
                         </div>
                     </div>
-
+                    <div class="card mb-3 shadow card-theme">
+                            <div class="card-header card-header-theme text-center">
+                                <h5>Team Velocity</h5>
+                            </div>
+                            <div class="card-body">
+                                <app-velocity></app-velocity>
+                            </div>
+                        </div>
                 </div>
                 <!-- End Card Deck -->
                 <div class="card-deck">
