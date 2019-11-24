@@ -10,9 +10,6 @@ import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { BarChartComponent } from './charts/bar-chart/bar-chart.component';
-import { LineChartComponent } from './charts/line-chart/line-chart.component';
-import { PieChartComponent } from './charts/pie-chart/pie-chart.component';
 import { StoryStatusComponent } from './charts/story-status/story-status.component';
 import { PiBurndownComponent } from './charts/pi-burndown/pi-burndown.component';
 import { VelocityComponent } from './charts/velocity/velocity.component';
@@ -20,6 +17,7 @@ import { PostSprintDefectsComponent } from './charts/post-sprint-defects/post-sp
 import { TestCaseCreationComponent } from './charts/test-case-creation/test-case-creation.component';
 import { TeamAttribsComponent } from './charts/team-attribs/team-attribs.component';
 import { CurrentPostSprintDefectsComponent } from './current-post-sprint-defects/current-post-sprint-defects.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -28,9 +26,6 @@ import { CurrentPostSprintDefectsComponent } from './current-post-sprint-defects
     NavMenuComponent,
     HomeComponent,
     SidebarComponent,
-    BarChartComponent,
-    LineChartComponent,
-    PieChartComponent,
     StoryStatusComponent,
     PiBurndownComponent,
     VelocityComponent,
@@ -42,6 +37,7 @@ import { CurrentPostSprintDefectsComponent } from './current-post-sprint-defects
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
+    NgbModule,
     FormsModule,
     ChartsModule,
     RouterModule.forRoot([
