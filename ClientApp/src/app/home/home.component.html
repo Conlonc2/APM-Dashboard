@@ -1,19 +1,19 @@
 <!-- 
-    Team XYZ will be a carsouel on rotatio between teams, but we will have each teams stats rotate as well 
+    Team XYZ will be a carsouel on rotation between teams, but we will have each teams stats rotate as well 
     display 3-8 charts at a time and have a timer rotate them NOTE: team rotation vs tile rotation must be properly timed to offset 
 -->
-<h1 class="text-center">Team 1</h1>
-<p class="text-center">Current Project: Big Business</p>
 <div class="section-container">
     <ngb-carousel #carousel interval="10000" [showNavigationArrows]="false">
         <!------------------------------- Slide 1 ------------------------------->
         <ng-template ngbSlide>
+            <h1 class="text-center">Team 1</h1>
+            <p class="text-center">Current Project: Big Business</p>
             <div class="cards">
 
-                <!-- Example card Deck -->
+                <!-- Card Deck 1 -->
                 <div class="card-deck">
 
-                    <!-- Example Card -->
+                    <!-- Team Attributes -->
                     <div class="card mb-3 shadow card-theme">
                         <div class="card-header card-header-theme text-center">
                             <h5>Meet the Team</h5>
@@ -22,8 +22,8 @@
                             <app-team-attribs></app-team-attribs> <!-- Should embed a diffrent chart here -->
                         </div>
                     </div>
-                    <!-- End Card -->
 
+                    <!-- PI-Burndown -->
                     <div class="card mb-3 shadow card-theme">
                         <div class="card-header card-header-theme text-center">
                             <h5>PI-Burndown</h5>
@@ -32,17 +32,22 @@
                             <app-pi-burndown></app-pi-burndown>
                         </div>
                     </div>
+
+                    <!-- Team Velocity -->
                     <div class="card mb-3 shadow card-theme">
-                            <div class="card-header card-header-theme text-center">
-                                <h5>Team Velocity</h5>
-                            </div>
-                            <div class="card-body">
-                                <app-velocity></app-velocity>
-                            </div>
+                        <div class="card-header card-header-theme text-center">
+                            <h5>Team Velocity</h5>
                         </div>
+                        <div class="card-body">
+                            <app-velocity></app-velocity>
+                        </div>
+                    </div>
                 </div>
-                <!-- End Card Deck -->
+
+                <!-- Card Deck 2 -->
                 <div class="card-deck">
+
+                    <!-- Story Status -->
                     <div class="card mb-3 shadow card-theme">
                         <div class="card-header card-header-theme text-center">
                             <h5>Story Status</h5>
@@ -54,53 +59,56 @@
                 </div>
             </div>
         </ng-template>
+        <!-- The next template will be Team 2 -->
 
         <!------------------------------- Slide 2 ------------------------------->
         <ng-template ngbSlide>
+            <h1 class="text-center">Team 1</h1>
+            <p class="text-center">Current Project: Big Business</p>
             <div class="cards">
-                    <div class="card-deck">
-                            <div class="card mb-3 shadow card-theme">
-                                <div class="card-header card-header-theme text-center">
-                                    <h5>Story Status</h5>
-                                </div>
-                                <div class="card-body">
-                                    <app-story-status></app-story-status>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <!-- Example card Deck -->
                 <div class="card-deck">
-                    <!-- Example Card -->
                     <div class="card mb-3 shadow card-theme">
                         <div class="card-header card-header-theme text-center">
-                            <h5>Meet the Team</h5>
+                            <h5>Story Status</h5>
                         </div>
                         <div class="card-body">
-                            <app-team-attribs></app-team-attribs> <!-- Should embed a diffrent chart here -->
-                        </div>
-
-                    </div>
-                    <!-- End Card -->
-
-                    <div class="card mb-3 shadow card-theme">
-                        <div class="card-header card-header-theme text-center">
-                            <h5>PI-Burndown</h5>
-                        </div>
-                        <div class="card-body">
-                            <app-pi-burndown></app-pi-burndown>
+                            <app-story-status></app-story-status>
                         </div>
                     </div>
-                    <div class="card mb-3 shadow card-theme">
-                            <div class="card-header card-header-theme text-center">
-                                <h5>Team Velocity</h5>
-                            </div>
-                            <div class="card-body">
-                                <app-velocity></app-velocity>
-                            </div>
-                        </div>
                 </div>
-                <!-- End Card Deck -->
+            </div>
+            <!-- Example card Deck -->
+            <div class="card-deck">
+                <!-- Example Card -->
+                <div class="card mb-3 shadow card-theme">
+                    <div class="card-header card-header-theme text-center">
+                        <h5>Meet the Team</h5>
+                    </div>
+                    <div class="card-body">
+                        <app-team-attribs></app-team-attribs> <!-- Should embed a diffrent chart here -->
+                    </div>
+
+                </div>
+                <!-- End Card -->
+
+                <div class="card mb-3 shadow card-theme">
+                    <div class="card-header card-header-theme text-center">
+                        <h5>PI-Burndown</h5>
+                    </div>
+                    <div class="card-body">
+                        <app-pi-burndown></app-pi-burndown>
+                    </div>
+                </div>
+                <div class="card mb-3 shadow card-theme">
+                    <div class="card-header card-header-theme text-center">
+                        <h5>Team Velocity</h5>
+                    </div>
+                    <div class="card-body">
+                        <app-velocity></app-velocity>
+                    </div>
+                </div>
+            </div>
+            <!-- End Card Deck -->
         </ng-template>
     </ngb-carousel>
 </div>
