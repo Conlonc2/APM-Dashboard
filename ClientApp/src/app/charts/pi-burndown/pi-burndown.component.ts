@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 const sampleData: any[] = [
-  {data: [65,84,72,61,65], label: "Planned", fill: false},
+  {data: [65,84,72,61,65], label: "Planned", fill: false, type: "line"},
   {data: [85,67,55,70,67], label: "Completed", type:"bar"}
 ];
 
-const sampleLabels: string[] = ["Sprint 1", "Sprint 2", "Sprint 3", "Sprint 4", "Sprint 5"];
+const sampleLabels: string[] = ["S1", "S2", "S3", "S4", "S5"];
 
 @Component({
   selector: 'app-pi-burndown',
@@ -23,7 +23,7 @@ export class PiBurndownComponent implements OnInit {
     responsive: true
   };
   public lineChartLegend = true;
-  public lineChartType = 'line';
+  public lineChartType = 'bar';
   ngOnInit() {
   }
 
