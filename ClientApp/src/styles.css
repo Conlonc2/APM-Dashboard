@@ -5,7 +5,20 @@
   box-sizing: border-box;
 }
 html{
-  height: 100%;
+  height: 98vh;
+}
+
+body{
+  overflow: hidden;
+  background-color:#1C2228;
+  color: #f7fff7;
+  height: 98vh;
+  width: 100vw;
+}
+@media only screen and (max-width: 991px) {
+  body {
+    overflow: auto;
+  }
 }
 
 a {
@@ -30,4 +43,29 @@ code {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
+}
+
+.card-theme{
+  background-color: #191F26;
+  border:none;
+  border-radius: 2px;
+}
+
+.card-header-theme{
+  color: #eee;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  padding: 12px;
+}
+
+.card-body-theme{
+  background-color: #494F56;
+}
+.cards{
+  display: flex;
+  flex-direction: column;
+}
+
+.section-container{
+  padding: 30px;
 }
