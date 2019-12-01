@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>User Manuel</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>APM-Dashboard</h1>
+        <hr>
+        <h2>Instillation & Deployment</h2>
+        <p>&emsp;&nbsp;If you would like to start the APM-Dashboard you will need a few things to get set up:
+            <ul class="list-group">
+                <li class="list-group-item"><a href="https://github.com/Conlonc2/APM-Dashboard.git">APM-Dashboard
+                        Project</a>: The project would be a good place to start. To acquire this you can run
+                    <code>git clone https://github.com/Conlonc2/APM-Dashboard.git</code></li>
+                <li class="list-group-item"><a href="https://nodejs.org/en/">Node.js</a>: this is used to access our
+                    Angular side of the
+                    application.</li>
+                <li class="list-group-item"><a href="https://www.postgresql.org/">PostgreSQL</a>: For the database.</li>
+            </ul>
+            &emsp;&nbsp;Once the above are on your machine please run <code>cd /path/to/project/<b><u>ClientApp</u></b></code>. Once in the
+            proper
+            directory run the following:
+            <code>npm install</code>. Once done you should be ready to start the server/front-end. To start the server
+            from the same directory as above you can run <code>npm start</code> OR <code>ng server</code>, as you should
+            also have the <i>Angular CLI</i> installed from the previous commands. (Note: if you do not have the
+            <i>Angular CLI</i> installed you can run <code>npm install @angluar/cli</code>)
+        </p>
+        <h2>Features of APM-Dashboard</h2>
+        <p>
+            &emsp;&nbsp;The APM-Dashboard was a request from <a href="https://www.selective.com/"><i>Selective
+                    Insurance</i></a> so
+            that they may view team statistics on current projects. The dashboard is to be displayed in key locations
+            around the office so that teams could see how they are doing in respect to there projects. There are a total
+            of eight tiles.
+            <table class="table table-responsive table-bordered">
+                <thead></thead>
+                <tbody>
+                    <tr>
+                        <td><b>PI-Burndown</b></td>
+                        <td>This is the teams effort remaining over a period of
+                            given time. This helps a team clearly see what is happening and how progress is being made
+                            for
+                            each sprint for the whole program increment(PI).</td>
+                    </tr>
+                    <tr>
+                        <td><b>Health (Status of a task <i>(On Track | At Risk)</i>)</b>: </td>
+                        <td>The health of a task is based on a hard codded response at the time but, later will be implemented using a given algorithm.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Sprint Readiness</b>: </td>
+                        <td>This statistic is based on the # of sprint ready tasks / # of total sprint tasks.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Velocity Histogram</b>: </td>
+                        <td>This statistic is based on the story points planned for vs how many points where actually completed.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Post Sprint Defects</b>: </td>
+                        <td>This is the history of defects for iterations of a given application</td>
+                    </tr>
+                    <tr>
+                        <td><b>Current Post Sprint Defects</b>: </td>
+                        <td>This is the history of sprint defects for the last iteration of a given application.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Test Case Creation History</b>: </td>
+                        <td>This chart will display how many tests where blocked, failed, not run, and passed.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Team Attributes</b>:
+                            <ul>
+                                <li class="text-muted">Team Size</li>
+                                <li class="text-muted">Average Velocity</li>
+                                <li class="text-muted">Velocity Trend</li>
+                            </ul>
+                        </td>
+                        <td> This is to include team name, members, and </td>
+                    </tr>
+                </tbody>
+            </table>
+            &emsp;&nbsp;Each one of these tiles are displayed on a per-team basis. In the areas common to multiple
+            teams the
+            dashboard will rotate through each team, thus allowing each team to peek at their statistics for a brief
+            time.
+        </p>
+        <h2>Main Goals & Lessons Learned</h2>
+        <p>
+            need content here
+        </p>
+        <h2>The Future of APM-Dashboard</h2>
+        <p>
+            As all systems do, APM-Dashboard may require new features such as... With this we may want to ...
+        </p>
+        <h3>Authors</h3>
+        <h6 class="text-muted">Meet Team <i>Quattro</i></h6>
+        <table class="table table-responsive">
+            <tr>
+                <td>
+                    Christopher Conlon
+                </td>
+                <td class="">
+                    Stivi Cangonj
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Nana Ahiabli
+                </td>
+                <td>
+                    Trey DeWald
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
