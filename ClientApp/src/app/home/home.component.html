@@ -62,10 +62,48 @@
 
         <!------------------------------- Slide 2 ------------------------------->
         <ng-template ngbSlide>
-            <h1 class="text-center">Team 1</h1>
+            <h1 class="text-center">Team 2</h1>
+            <h5 class="text-center text-muted">The below charts will change once our DB is connected up</h5>
             <p class="text-center">Current Project: Big Business</p>
             <div class="cards">
+
+                <!-- Card Deck 1 -->
                 <div class="card-deck">
+
+                    <!-- Team Attributes -->
+                    <div class="card mb-3 shadow card-theme">
+                        <div class="card-header card-header-theme text-center">
+                            <h5>Meet the Team</h5>
+                        </div>
+                        <div class="card-body">
+                            <app-team-attribs></app-team-attribs> <!-- Should embed a diffrent chart here -->
+                        </div>
+                    </div>
+
+                    <!-- PI-Burndown -->
+                    <div class="card mb-3 shadow card-theme">
+                        <div class="card-header card-header-theme text-center">
+                            <h5>PI-Burndown</h5>
+                        </div>
+                        <div class="card-body">
+                            <app-pi-burndown></app-pi-burndown>
+                        </div>
+                    </div>
+
+                    <!-- Test Case Creation -->
+                    <div class="card mb-3 shadow card-theme">
+                        <div class="card-header card-header-theme text-center">
+                            <h5>Test Case Creation</h5>
+                        </div>
+                        <div class="card-body">
+                            <app-test-case-creation></app-test-case-creation>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Deck 2 -->
+                <div class="card-deck">
+                    <!-- Story Status -->
                     <div class="card mb-3 shadow card-theme">
                         <div class="card-header card-header-theme text-center">
                             <h5>Story Status</h5>
@@ -76,39 +114,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Example card Deck -->
-            <div class="card-deck">
-                <!-- Example Card -->
-                <div class="card mb-3 shadow card-theme">
-                    <div class="card-header card-header-theme text-center">
-                        <h5>Meet the Team</h5>
-                    </div>
-                    <div class="card-body">
-                        <app-team-attribs></app-team-attribs> <!-- Should embed a diffrent chart here -->
-                    </div>
-
-                </div>
-                <!-- End Card -->
-
-                <!-- Team Velocity -->
-                <div class="card mb-3 shadow card-theme">
-                    <div class="card-header card-header-theme text-center">
-                        <h5>Team Velocity</h5>
-                    </div>
-                    <div class="card-body">
-                        <app-velocity></app-velocity>
-                    </div>
-                </div>
-                <div class="card mb-3 shadow card-theme">
-                    <div class="card-header card-header-theme text-center">
-                        <h5>Team Velocity</h5>
-                    </div>
-                    <div class="card-body">
-                        <app-velocity></app-velocity>
-                    </div>
-                </div>
-            </div>
-            <!-- End Card Deck -->
         </ng-template>
     </ngb-carousel>
 </div>
