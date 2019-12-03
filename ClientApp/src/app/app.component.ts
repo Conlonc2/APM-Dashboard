@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { HomeComponent } from './home/home.component';
+import { DbGrabComponent } from './db-grab/db-grab.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'app';
+  constructor(private _db: DbGrabComponent){}
+  ngOnInit(){
+    this._db.grabData()
+    .subscribe((res) => {
+      console.log(res);
+    })
+  }
 }
