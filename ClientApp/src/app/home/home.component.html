@@ -63,10 +63,20 @@
         <!------------------------------- Slide 2 ------------------------------->
         <ng-template ngbSlide>
             <h1 class="text-center">Team 2</h1>
-            <h5 class="text-center text-muted">The below charts will change once our DB is connected up</h5>
             <p class="text-center">Current Project: Big Business</p>
             <div class="cards">
-
+                <!-- Card Deck 2 -->
+                <div class="card-deck">
+                    <!-- Story Status -->
+                    <div class="card mb-3 shadow card-theme">
+                        <div class="card-header card-header-theme text-center">
+                            <h5>Story Status</h5>
+                        </div>
+                        <div class="card-body">
+                            <app-story-status></app-story-status>
+                        </div>
+                    </div>
+                </div>
                 <!-- Card Deck 1 -->
                 <div class="card-deck">
 
@@ -83,10 +93,10 @@
                     <!-- PI-Burndown -->
                     <div class="card mb-3 shadow card-theme">
                         <div class="card-header card-header-theme text-center">
-                            <h5>PI-Burndown</h5>
+                            <h5>Velocity</h5>
                         </div>
                         <div class="card-body">
-                            <app-pi-burndown></app-pi-burndown>
+                            <app-velocity></app-velocity>
                         </div>
                     </div>
 
@@ -97,19 +107,6 @@
                         </div>
                         <div class="card-body">
                             <app-test-case-creation></app-test-case-creation>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card Deck 2 -->
-                <div class="card-deck">
-                    <!-- Story Status -->
-                    <div class="card mb-3 shadow card-theme">
-                        <div class="card-header card-header-theme text-center">
-                            <h5>Story Status</h5>
-                        </div>
-                        <div class="card-body">
-                            <app-story-status></app-story-status>
                         </div>
                     </div>
                 </div>

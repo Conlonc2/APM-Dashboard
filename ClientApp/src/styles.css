@@ -5,14 +5,14 @@
   box-sizing: border-box;
 }
 html{
-  height: 98vh;
+  height: 95vh;
 }
 
 body{
   overflow: hidden;
   background-color:#1C2228;
   color: #f7fff7;
-  height: 98vh;
+  height: 97vh;
   width: 100vw;
 }
 @media only screen and (max-width: 991px) {

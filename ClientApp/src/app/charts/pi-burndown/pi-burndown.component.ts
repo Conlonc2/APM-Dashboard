@@ -3,7 +3,7 @@ import { DbGrabComponent } from 'src/app/db-grab/db-grab.component';
 
 const sampleData: any[] = [
   { data: [65, 84, 72, 61, 65, 65, 84, 72, 61, 65], label: "Actual", fill: false, type: "line" },
-  { data: [85, 67, 55, 70, 67, 65, 84, 72, 61, 65], label: "Effort", type: "bar" }
+  { data: [100, 67, 55, 70, 67, 65, 84, 72, 61, 65], label: "Effort", type: "bar" }
 ];
 
 const sampleLabels: string[] = ["S1", "S2", "S3", "S4", "S5"];
@@ -26,7 +26,6 @@ export class PiBurndownComponent implements OnInit {
   public lineChartLegend = true;
   public lineChartType = 'bar';
   ngOnInit() {
-    let i = 0;
     this._db.gatherData()
       .subscribe((res) => {
         for (let index in res) {
