@@ -17,6 +17,7 @@ import { TestCaseCreationComponent } from './charts/test-case-creation/test-case
 import { TeamAttribsComponent } from './charts/team-attribs/team-attribs.component';
 import { CurrentPostSprintDefectsComponent } from './current-post-sprint-defects/current-post-sprint-defects.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { DbGrabComponent } from './db-grab/db-grab.component';
 
 
 @NgModule({
@@ -42,7 +43,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
       { path: '', component: HomeComponent, pathMatch: 'full' },
     ])
   ],
-  providers: [],
+  providers: [DbGrabComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
